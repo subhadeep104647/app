@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>student profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
 </head>
 <body>
-  <h2>Hello, {{ name }}</h2>
-  {% if is_topper %}
-  <p>You are a Toppre very good </p>
-  {% else %}
-  <p>You need to work hard </p>
-  {% endif %}
+     <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">About</a> 
+            <a href="#">Terms & conditions</a>  
 
-  <h3>your subjects </h3>
-  <ul>
-    {% for subject in subjects %}
-    <li>{{variable}}</li>
-    {% endfor %}
-  </ul>
+        </nav>
+    </header>
+   
 </body>
 </html>
