@@ -3,18 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login page</title>
+  <title>Login Page</title>
+  <style>
+    .body{
+             margin: 0;
+             font-family: Arial, sans-serif;
+             background-image: url("bg.jpg") no-repeat center center/cover;
+             height: 100vh;
+             display: flex;
+             flex-direction: column;
+             font-family: Arial, Helvetica, sans-serif;
+        }
+        .header{
+            background-color: aliceblue;
+            padding: 10px;
+            background: fixed;
+        }
+        .footer{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin-top: 20px;
+        }
+  </style>
 </head>
 <body>
-     <div class="navbar">
-        <div class="logo">
-            <span>Zenrider</span>
-        </div>
-        <div class="nav-links">
+     <header>
+        <h2>Zenrider</h2>
+        <nev>
             <a href="#">About</a>
             <a href="#">Terms & conditions</a>
-        </div>
-    </div>
+        </nev>
+    </header>
+    <style>
+      .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    </style>
   <h2>LOGIN</h2><br><br>
 
   <form action="{{ url_for('submit') }}" method="post">
