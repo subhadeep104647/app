@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login page</title>
 </head>
 <body>
-  <h2>Hello, {{ name }}</h2>
-  {% if is_topper %}
-  <p>You are a Toppre very good </p>
-  {% else %}
-  <p>You need to work hard </p>
-  {% endif %}
+     <div class="navbar">
+        <div class="logo">
+            <span>Zenrider</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Terms & conditions</a>
+        </div>
+    </div>
+  <h2>LOGIN</h2><br><br>
 
-  <h3>your subjects </h3>
-  <ul>
-    {% for subject in subjects %}
-    <li>{{variable}}</li>
-    {% endfor %}
-  </ul>
+  <form action="{{ url_for('submit') }}" method="post">
+    
+    <label>Username</label><br>
+    <input type="text" name="username" placeholder="Enter your username" required><br><br>
+
+    <label>Password</label><br>
+    <input type="password" name="password" placeholder="Enter your password" required><br><br>
+
+    <input type="submit" value="Login">
+  </form>
 </body>
 </html>
