@@ -22,4 +22,4 @@ The design follows a **glassmorphism style** and provides a clean, user-friendly
 ## 🚀 How to Run  
 1. Clone the repository:  
    ```bash
-   git clone 
+   git clone https://github.com/subhadeep104647/app.git
